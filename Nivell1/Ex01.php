@@ -5,10 +5,18 @@
 
 $edat = 43;
 
-if(($edat % 2) == 0) {
-    echo "El número és parell.";
-}   else {
-    echo "El número no és parell.";
+function parell($edat) {
+    $resposta = "";
+    
+    if(($edat % 2) == 0) {
+        $resposta = "El número és parell.";
+    }   else {
+        $resposta =  "El número no és parell.";
+    }
+    
+    return $resposta;
 }
+
+echo parell($edat);
 
 ?>

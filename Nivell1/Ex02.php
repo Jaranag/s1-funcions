@@ -4,9 +4,13 @@ Però la persona que comptarà és una mica tramposa i ho farà comptant de dos 
 
 <?php
 
-
-for ($i = 0; $i <= 10; $i += 2) {
-    echo "Número: $i <br>";
+function amagatall() {
+    for ($i = 0; $i <= 10; $i += 2) {
+        echo "Número: $i <br>";
+    }
+    
 }
+
+echo amagatall();
 
 ?>

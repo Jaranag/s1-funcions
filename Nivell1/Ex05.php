@@ -11,14 +11,18 @@ Si la nota és menor a 33%, l'estudiant reprovarà. -->
 
 $nota = 72;
 
-if($nota < 33) {
-    echo "L'estudiant reprova";
-}elseif($nota <= 44) {
-    echo "Tercera Divisió";
-}elseif($nota <= 59) {
-    echo"Segona divisió";
-}else {
-    echo "Primera divisió";
+function grau($nota) {
+    if($nota < 33) {
+        echo "L'estudiant reprova";
+    }elseif($nota <= 44) {
+        echo "Tercera Divisió";
+    }elseif($nota <= 59) {
+        echo"Segona divisió";
+    }else {
+        echo "Primera divisió";
+    }
 }
+
+echo grau($nota);
 
 ?>

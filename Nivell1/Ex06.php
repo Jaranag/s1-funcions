@@ -4,14 +4,18 @@ Escriu La funció isBitten () que retorna TRUE amb un 50% de probabilitat i FALS
 
 <?php
 
-$isBitten = rand(true, false);
 
+function isBitten(){
+    $isBitten = rand(true, false);
 
-
-if ($isBitten == true) {
-    echo "Charlie mossega";
-}else {
-    echo "Charlie no mossega";
+    if ($isBitten == true) {
+        echo "Charlie mossega";
+    }else {
+        echo "Charlie no mossega";
+    }
+    
 }
+
+echo isBitten($isBitten);
 
 ?>

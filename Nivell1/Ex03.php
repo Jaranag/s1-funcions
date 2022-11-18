@@ -5,8 +5,12 @@ Programa la funció perquè el final del compte estigui parametritzat. -->
 
 $numCompte = 16;
 
-for ($i = 0; $i <= $numCompte; $i += 2) {
-    echo "Número: $i <br>";
+function amagatall($numCompte) {
+    for ($i = 0; $i <= $numCompte; $i += 2) {
+        echo "Número: $i <br>";
+    }
 }
+
+echo amagatall($numCompte);
 
 ?>
